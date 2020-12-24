@@ -1,0 +1,98 @@
+@font-face {
+	font-family:"Christmas";
+	src:url("resources/Santa's Air Mail.ttf");
+}
+
+@font-face {
+	font-family:"xMas2";
+	src:url("resources/ChristmasFlake.ttf");
+}
+
+body {
+	text-align:center;
+	font-size:40px;
+	margin: 0;
+}
+	
+.topnavbar {
+	font-family:XMas2;
+	overflow: hidden;
+    background-color: red;
+	padding: 60px;
+}
+
+.topnavbar a {
+	text-align: center;
+	color: white;
+	font-size: 150px;
+	text-decoration:none;
+	position: relative;
+}
+
+.topnavbar a:hover {
+	-webkit-stroke-width: 5.3px;
+    -webkit-stroke-color: #FFFFFF;
+    -webkit-fill-color: #FFFFFF;
+    text-shadow: 5px 0px 20px yellow;
+}
+
+.topnavbar ul {
+	width: 50%;
+	margin: auto;
+	word-spacing: 30px;
+}
+
+.topnavbar li {
+	display: inline;
+	color: white;
+}
+
+.clocktitle {
+	font-family:"Christmas";
+	font-size: 50px;
+	font-weight: 600;
+	background:url("resources/gradient2.jpg") no-repeat;
+	background-position: center;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.clocktimeunit {
+	font-family:"Christmas";
+	font-size: 50px;
+}
+#clock {
+	font-family:"Christmas";
+	font-size: 60px;
+	color: blue;
+	font-weight: 1000;
+	background:url("resources/gradient1.jpg") no-repeat;
+	background-position: center;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#footer {
+    background-color: #8b0000;
+    padding: 20px;
+	color: white;
+	font-size:20px;
+}
+
+#decoration1
+{
+	background-image: url("resources/decorations1.png");
+	background-repeat: repeat-x;
+	width: 100%;
+}
+#about-us-content {
+	background-color: #7ED8FB;
+}
+
+#santa-content {
+	background-color: #7ED8FB;
+	font-size: 30px;
+}
+
+#santa-received {
+	background-color: #7ED8FB;
+}
