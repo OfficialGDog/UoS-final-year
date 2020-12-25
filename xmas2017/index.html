@@ -9,8 +9,8 @@
 	<title>Christmas Countdown</title>
 	
 </head>
-
-<body onload="time();snow();">
+<!-- setInterval calls the function every 0.2 seconds, causing the clock appear as if it is counting down -->
+<body onload="setInterval(time, 200); snow();">
 	<canvas id="sky" style="position:absolute;top:0;left:0;"></canvas>
 	<div class="topnavbar">
 	<a href="index.html">Christmas 0 Countdown</a>

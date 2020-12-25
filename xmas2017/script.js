@@ -1,5 +1,5 @@
 function time() {
-	
+
 	/* Object for "Date" */
 	var d = new Date();
 	var month = d.getMonth();
@@ -8,7 +8,7 @@ function time() {
 
 	/* Checks if the current date is greater than or equal to the 25th December (Christmas Day)  */
 	if (day >= 25 && month == 11) {
-		document.getElementById("clock").innerHTML = '<span class="clocktimeunit">0 DAYS, 0 HOURS</span><br/><span class="clocktimeunit">0 MINUTES, 0 SECONDS</span>';
+		document.getElementById("clock").innerHTML = '<span class="clocktimeunit">0 DAYS, 0 HOURS,</span><br/><span class="clocktimeunit">0 MINUTES, 0 SECONDS, </span>';
 		// The return keyword ends the function here as we don't need to calculate how many days until Christmas. It's already Christmas! Ho ho ho 🎅  
 		return;
 	}
@@ -50,9 +50,7 @@ function time() {
 	
 	/* Displays the information in a nice format */
 	document.getElementById("clock").innerHTML = days + "<span class='clocktimeunit'> DAYS, </span>" + hours + "<span class='clocktimeunit'> HOURS, </span>" + "</br>" + minutes + "<span class='clocktimeunit'> MINUTES, </span> " + seconds + "<span class='clocktimeunit'> SECONDS, </span>";
-	/* Calls the function every 0.2 seconds, causing the clock appear as if it is counting down */
-	setTimeout(time, 200);
-	
+
 }
 
 function snow(){
