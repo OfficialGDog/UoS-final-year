@@ -2,12 +2,22 @@ function time() {
 	
 	/* Object for "Date" */
 	var d = new Date();
-	
+	var month = d.getMonth();
+	var day = d.getDate();
+	var year = d.getYear();
+
+	/* Checks if the current date is greater than or equal to the 25th December (Christmas Day)  */
+	if (day >= 25 && month == 11) {
+		document.getElementById("clock").innerHTML = '<span class="clocktimeunit">0 DAYS, 0 HOURS</span><br/><span class="clocktimeunit">0 MINUTES, 0 SECONDS</span>';
+		// The return keyword ends the function here as we don't need to calculate how many days until Christmas. It's already Christmas! Ho ho ho 🎅  
+		return;
+	}
+
 	/* Array storing the number of seconds in each month */
 	var monthSeconds = [2678400, 2419200, 2678400, 2592000, 2678400, 2592000, 2678400, 2678400, 2592000, 2678400, 2592000, 2678400];
 	
 	/* Determines the amount of seconds there are in the current year depending on whether or not it is a leap year */
-	var year = d.getYear();
+
 	if (year % 4 == 0 && year % 100 == 0 && year % 400 == 0) {
 		secondsFromStart = 31622400;
 		monthSeconds[1] += 86400;
@@ -17,7 +27,6 @@ function time() {
 	}
 	
 	/* Adds up all the seconds from the previous months */
-	var month = d.getMonth();
 	var secondsFromNow = 0;
 	for (var i = 0; i != month; i++) {
 		secondsFromNow += monthSeconds[i];
