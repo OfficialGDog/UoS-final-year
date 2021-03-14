@@ -9,6 +9,7 @@ function time() {
 	/* Checks if the current date is greater than or equal to the 25th December (Christmas Day)  */
 	if (day == 25 && month == 11) {
 		document.getElementById("clock").innerHTML = '<span class="clocktimeunit">0 DAYS, 0 HOURS,</span><br/><span class="clocktimeunit">0 MINUTES, 0 SECONDS, </span>';
+		document.getElementById("subtitle").innerText = 'MERRY CHRISTMAS!';
 		// The return keyword ends the function here as we don't need to calculate how many days until Christmas. It's already Christmas! Ho ho ho 🎅  
 		return;
 	}

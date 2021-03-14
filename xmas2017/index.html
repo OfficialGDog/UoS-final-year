@@ -5,7 +5,7 @@
 	
 	<meta charset="UTF-8">
 	<link href="style.css" rel="stylesheet">
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="script.js" defer></script>
 	<title>Christmas Countdown</title>
 	
 </head>
@@ -26,8 +26,12 @@
 	</div>
 	<div id="container">
 	<p class="clocktitle">THERE ARE</p>
-	<div id="clock"></div>
-	<p class="clocktitle">UNTIL CHRISTMAS</p>
+	<div id="clock">
+		<span class="clocktimeunit">0 DAYS, 0 HOURS,</span>
+		<br>
+		<span class="clocktimeunit">0 MINUTES, 0 SECONDS,</span>
+	</div>
+	<p id="subtitle" class="clocktitle">UNTIL CHRISTMAS</p>
 	</div>
 	<div id="footer">Created by: Gareth, Michael, Maruf & Ryan Copyright 2017 (C)</div>
 </body>
